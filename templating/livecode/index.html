@@ -13,10 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v6.1.2/css/all.css"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -29,29 +26,29 @@
     </script>
   </head>
   <body class="bg-dark">
+    <template id="cardTemplate">
+      <div class="pokemon-card">
+        <a class="pokemon-card-link">
+          <img class="pokemon-card-image" />
+          <h2 class="pokemon-card-title"></h2>
+          <p class="pokemon-card-subtitle"></p>
+        </a>
+      </div>
+    </template>
+
+    <template id="infoTemplate">
+      <div class="info">
+        <img class="pokemon-card-image" />
+        <h2 class="pokemon-card-title"></h2>
+        <p class="pokemon-card-subtitle"></p>
+      </div>
+    </template>
+
     <div id="app" class="container">
       <h1>Gotta Catch 'Em All</h1>
       <div class="two-columns">
         <div id="cardsContainer" class="grid"></div>
-
-        <template id="cardTemplate">
-          <div class="pokemon-card">
-            <img class="pokemon-card-image" />
-            <h2 class="pokemon-card-title"></h5>
-            <p class="pokemon-card-subtitle"></p>
-            <a class="pokemon-card-link"></a>
-          </div>
-        </template>
-
         <div id="infoContainer"></div>
-
-        <template id="infoTemplate">
-          <div class="info">
-            <img class="pokemon-card-image" />
-            <h2 class="pokemon-card-title"></h5>
-            <p class="pokemon-card-subtitle"></p>
-          </div>
-        </template>
       </div>
     </template>
     <!-- Import your own javascript -->
